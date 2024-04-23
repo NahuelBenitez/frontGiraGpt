@@ -15,7 +15,7 @@ export function FileSend() {
       formData.append('datos', fileData);
       
       try {
-        const response = await fetch('http://localhost:4001/api/upload', {
+        const response = await fetch('http://localhost:3000/api/upload', {
           method: 'POST',
           body: formData,
         });
